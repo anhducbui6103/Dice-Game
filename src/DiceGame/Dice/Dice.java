@@ -1,10 +1,6 @@
 package DiceGame.Dice;
 
-import DiceGame.Player.Player;
-
 public class Dice {
-    private static int minValue = 1;
-    private static int maxValue = 6;
 
     public static int roll(int specialValue){
         double randomValue = Math.random();
@@ -12,10 +8,9 @@ public class Dice {
         if (randomValue < 0.04) {
             DiceValue = specialValue;
         } else {
-            DiceValue = (int) (Math.random() * (maxValue - minValue +1)) + minValue;
+            DiceValue = (int) (Math.random() * 6) + 1;
         }
         System.out.println("Get " + DiceValue + " point");
         return DiceValue;
     }
-
 }

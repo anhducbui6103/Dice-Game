@@ -1,14 +1,10 @@
 package DiceGame.Player;
 
-public class VirtualPlayer extends Player implements FailureReact{
+public class VirtualPlayer extends Player{
     private String FailMessage;
 //    Getter
     public String getFailMessage() {
         return FailMessage;
-    }
-//    Setter
-    public void setFailMessage(String failMessage) {
-        FailMessage = failMessage;
     }
 
 //    Constructor
@@ -22,4 +18,3 @@ public class VirtualPlayer extends Player implements FailureReact{
         System.out.println(this.getName() + ": " + this.getFailMessage());
     }
 }
-

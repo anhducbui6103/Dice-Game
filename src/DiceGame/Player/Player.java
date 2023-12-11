@@ -1,8 +1,6 @@
 package DiceGame.Player;
 
 import DiceGame.Dice.Dice;
-
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Player {
@@ -26,7 +24,6 @@ public class Player {
     }
 
     //method
-    Scanner scanner = new Scanner(System.in);
     public void play(int choice){
         int newPoint = this.getPoint() + Dice.roll(choice);
         if (newPoint > 21) newPoint = 0;

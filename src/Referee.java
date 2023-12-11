@@ -44,8 +44,6 @@ public class Referee {
         }
         for (int i = numberPlayer; i < 4; i++){
             playerList.remove(numberPlayer);
-        }
-        for (int i = numberPlayer; i <4; i++){
             playerList.add(vPlayerList.get(i));
         }
         PlayBoard();
@@ -94,15 +92,14 @@ public class Referee {
         playerList.add(player3);
         playerList.add(player4);
 
-        VirtualPlayer virtualPlayer1 = new VirtualPlayer("Vplayer1","Noooooo");
-        VirtualPlayer virtualPlayer2 = new VirtualPlayer("Vplayer2","No!!!!!");
-        VirtualPlayer virtualPlayer3 = new VirtualPlayer("Vplayer3","Nox3,14");
-        VirtualPlayer virtualPlayer4 = new VirtualPlayer("Vplayer4","Yesn't");
+        VirtualPlayer virtualPlayer1 = new VirtualPlayer("VPlayer1","Noooooo");
+        VirtualPlayer virtualPlayer2 = new VirtualPlayer("VPlayer2","No!!!!!");
+        VirtualPlayer virtualPlayer3 = new VirtualPlayer("VPlayer3","Nox3,14");
+        VirtualPlayer virtualPlayer4 = new VirtualPlayer("VPlayer4","Yesn't");
         vPlayerList.add(virtualPlayer1);
         vPlayerList.add(virtualPlayer2);
         vPlayerList.add(virtualPlayer3);
         vPlayerList.add(virtualPlayer4);
-
         Menu();
     }
 }
